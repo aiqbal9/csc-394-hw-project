@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 
-from pathlib import Path,os
+from pathlib import Path
+import os
 
 
 
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'homework.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
+        'DIRS': [os.path.join(BASE_DIR, 'homework/templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
